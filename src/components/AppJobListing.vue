@@ -1,9 +1,16 @@
 <script setup>
+// Import the AppListing component for individual job cards
 import AppListing from './AppListing.vue';
+// Import RouterLink for navigation
 import { RouterLink } from 'vue-router';
+// Import Vue composition API functions
 import { reactive, defineProps, onMounted } from 'vue';
+// Import PulseLoader for loading spinner
 import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
+// Import axios for HTTP requests
 import axios from 'axios';
+
+// Define props: 'limit' for max jobs to show, 'showButton' to display "View All Jobs"
 defineProps({
   limit: Number,
   showButton: {
@@ -12,12 +19,13 @@ defineProps({
   }
 });
 
+// Reactive state for jobs and loading status
 const state = reactive({
   jobs: [],
   loading: true,
-
 });
 
+// Fetch jobs from API when component mounts
 onMounted(async () => {
   try {
     const response = await axios.get('/api/jobs');
@@ -30,6 +38,10 @@ onMounted(async () => {
 });
 </script>
 <template>
+  <!--
+    Job Listings section with a title, loading spinner, and job cards.
+    Shows up to 'limit' jobs. Optionally displays a button to view all jobs.
+  -->
   <section class="bg-blue-50 px-4 py-10">
     <div class="container-xl lg:container m-auto">
       <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">Job Listings</h2>
@@ -45,6 +57,7 @@ onMounted(async () => {
       </div>
     </div>
   </section>
+  <!-- "View All Jobs" button, shown if 'showButton' prop is true -->
   <section v-if="showButton" class="m-auto max-w-lg my-10 px-6">
       <RouterLink
         to="/jobs"

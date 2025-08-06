@@ -1,18 +1,18 @@
 {
   "jobs": [
     {
-      "id": "1",
       "title": "Senior Vue Developer",
       "type": "Full-Time",
       "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as Vue or Angular.",
-      "location": "Boston, MA",
       "salary": "$70K - $80K",
+      "location": "Boston, MA",
       "company": {
         "name": "NewTek Solutions",
         "description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
-        "contactEmail": "contact@teksolutions.com",
-        "contactPhone": "555-555-5555"
-      }
+        "contact_email": "j@v",
+        "contact_phone": "52523752527"
+      },
+      "id": "1"
     },
     {
       "id": "2",
@@ -86,20 +86,6 @@
     },
     {
       "id": "19e9",
-      "title": "j",
-      "type": "Full-Time",
-      "description": "j",
-      "salary": "$60K - $70K",
-      "location": "j",
-      "company": {
-        "name": "j",
-        "description": "j",
-        "contact_email": "f@t",
-        "contact_phone": "e"
-      }
-    },
-    {
-      "id": "d217",
       "title": "j",
       "type": "Full-Time",
       "description": "j",
