@@ -49,6 +49,9 @@ src/
    ```
    npm run dev
    ```
+   ```
+   npm run server
+   ```
 
 3. **API**
 
@@ -69,6 +72,3 @@ src/
 - Modify views in `src/views/` for page logic.
 - Adjust routes in `src/router/index.js`.
 
-## License
-
-MIT
